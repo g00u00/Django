@@ -1,0 +1,59 @@
+cat >dj.sh 
+cd /var/www/g06/g06u34/public_html/django-apps
+. env/bin/activate
+cd mysite
+python manage.py runserver 198.211.123.137:8034
+
+
+mkdir django-apps   - при установке
+cd django-apps
+cmd /C "C:\Program Files\Python38\python.exe"  -VSC 
+
+python -V
+python3 -V
+pip -V
+pip3 -V
+pip3 list
+
+
+
+pip3 install env
+python3 -m venv env
+python3 -m venv env   -windows 
+#mkvirtualenv --python=python3.7 env  - при установке
+https://docs.python.org/3.4/tutorial/venv.html   !!!
+
+. env/bin/activate
+env\Scripts\activate -windows
+workon env   - anywhere
+
+
+pip install --upgrade pip  - при установке
+python -m pip install --upgrade pip  - windows
+deactivate
+
+pip install django - не использовать
+pip install -U django==8.0.4
+
+python -m django --version
+django-admin --version
+ls -lAF
+(env) 11:50 ~ $ which django-admin.py
+
+
+django-admin
+django-admin startproject mysite
+cd mysite
+vim mysite/settings.py
+ALLOWED_HOSTS = ["*"]
+
+python manage.py runserver 198.211.123.137:8034 две последние цифры - номер логина
+python manage.py migrate
+python manage.py createsuperuser
+
+http://198.211.123.137:8034/admin/   g06u34 t...t
+
+
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8034
+
+

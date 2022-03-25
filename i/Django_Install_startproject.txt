@@ -1,0 +1,30 @@
+mkdir django-apps
+#mkvirtualenv --python=python3.7 env
+
+python -m venv env
+pip -V
+pip3 -V
+pip list
+pip3 list
+pip install django-bootstrap4
+
+
+. env/bin/activate
+env\Scripts\activate
+deactivate
+
+pip3 install django
+pip install -U django==3.0.4
+pip install -U django==2.0.13
+python -m django --version
+django-admin --version
+ls -lAF
+(env) 11:50 ~ $ which django-admin.py
+/home/vmarshirov/.virtualenvs/env/bin/django-admin.py
+
+
+django-admin
+django-admin startproject mysite
+python manage.py runserver localhost:8040
+python manage.py runserver g06u40.nn2000.info:8040
+

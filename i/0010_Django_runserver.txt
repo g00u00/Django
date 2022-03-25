@@ -1,0 +1,9 @@
+cd public_html/django-apps;
+
+. env/bin/activate
+env\Scripts\activate
+deactivate
+
+cd mysite 
+python manage.py runserver g06u40.nn2000.info:8040
+python manage.py runserver localhost:8040
