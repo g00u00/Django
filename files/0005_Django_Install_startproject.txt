@@ -1,21 +1,20 @@
-cat >dj.sh 
-
+Текущее
 cd django-apps
 . env/bin/activate
 cd mysite
-python manage.py runserver 10.0.2.15:8000
+python manage.py runserver 127.0.0.1:8000
 
 echo "
 cd django-apps
 . env/bin/activate
 cd mysite
-python manage.py runserver 10.0.2.15:8000
 python manage.py runserver 127.0.0.1:8000
 deactivate
 "
 
 
-mkdir django-apps   - при установке
+Установка
+mkdir django-apps   
 cd django-apps
 cmd /C "C:\Program Files\Python38\python.exe"  -VSC 
 
@@ -24,7 +23,6 @@ python3 -V
 pip -V
 pip3 -V
 pip3 list
-
 
 
 pip3 install env   - старый вариант
@@ -41,10 +39,9 @@ workon env   - anywhere
 
 pip install --upgrade pip  - при установке
 python -m pip install --upgrade pip  - windows
-deactivate
 
-pip install django - не использовать
 pip install -U django==8.0.4
+pip install django - не использовать
 
 python -m django --version
 django-admin --version
@@ -58,11 +55,10 @@ cd mysite
 vim mysite/settings.py
 ALLOWED_HOSTS = ["*"]
 
-python manage.py runserver 198.211.123.137:8034 две последние цифры - номер логина
+python manage.py runserver 127.0.0.1:8000
 python manage.py migrate
 python manage.py createsuperuser
 
-http://198.211.123.137:8034/admin/   g06u34 t...t
+http://127.0.0.1:8000/admin/   g06u00 t...t
 
-iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8034
-
+iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000
