@@ -40,6 +40,9 @@ django-admin --version
 ls -lAF
 (env) 11:50 ~ $ which django-admin.py
 
+deactivate
+clone ....
+
 
 django-admin startproject mysite
 cd mysite
