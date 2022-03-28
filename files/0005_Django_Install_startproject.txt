@@ -1,39 +1,30 @@
+===============
 Текущее
 cd django-apps
 . env/bin/activate
 cd mysite
-python manage.py runserver 127.0.0.1:8000
-
-echo "
-cd django-apps
-. env/bin/activate
-cd mysite
+python manage.py runserver 10.0.2.15:8000   - для случая с пробросом портов
 python manage.py runserver 127.0.0.1:8000
 deactivate
-"
 
-
+==================
 Установка
-mkdir django-apps   
-cd django-apps
-cmd /C "C:\Program Files\Python38\python.exe"  -VSC 
-
 python -V
 python3 -V
 pip -V
 pip3 -V
 pip3 list
 
-
+sudo apt install python3-venv
+sudo apt install python3.8-venv
 pip3 install env   - старый вариант
-apt install python3.8-venv
-python3 -m venv env
-python3 -m venv env   -windows 
-#mkvirtualenv --python=python3.7 env  - при установке
 https://docs.python.org/3.4/tutorial/venv.html   !!!
 
+
+mkdir django-apps   
+cd django-apps
+python3 -m venv env
 . env/bin/activate
-env\Scripts\activate -windows
 workon env   - anywhere
 
 
@@ -49,16 +40,16 @@ ls -lAF
 (env) 11:50 ~ $ which django-admin.py
 
 
-django-admin
 django-admin startproject mysite
 cd mysite
 vim mysite/settings.py
 ALLOWED_HOSTS = ["*"]
 
+python manage.py runserver 10.0.2.15:8000   - для случая с пробросом портов
 python manage.py runserver 127.0.0.1:8000
 python manage.py migrate
 python manage.py createsuperuser
 
-http://127.0.0.1:8000/admin/   g06u00 t...t
+http://127.0.0.1:8000/admin/   g00u00 t...t
 
 iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8000
