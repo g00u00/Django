@@ -41,7 +41,6 @@ git init
 и далее. ....
 
 
-
 python -m django --version
 django-admin --version
 ls -lAF
