@@ -17,7 +17,6 @@ pip3 list
 
 
 !!! sudo apt install python3.8-venv
-
 pip3 install env   - старый вариант
 https://docs.python.org/3.4/tutorial/venv.html   !!!
 
@@ -32,9 +31,16 @@ workon env   - anywhere
 pip install --upgrade pip  - при установке
 python -m pip install --upgrade pip  - windows
 
-pip install -U django==8.0.4
+pip install -U django==8.0.4  - выбрать нужную версию
 pip install django - не использовать
 pip list
+pip install django-widget-tweaks
+pip install ...
+
+git init
+и далее. ....
+
+
 
 python -m django --version
 django-admin --version
