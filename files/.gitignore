@@ -1,3 +1,15 @@
+Полезные фрагменты
+
+/.ssh/*
+/__pycache__/*
+/*/__pycache__/*
+/.idea/*
+/venv/*
+id_rsa
+id_rsa.pub
+
+
+
 venv
 *.pyc
 staticfiles
