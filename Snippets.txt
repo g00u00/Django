@@ -1,0 +1,4 @@
+https://github.com/jazzband/django-widget-tweaks
+
+https://www.django-rest-framework.org/#requirements
+https://www.django-rest-framework.org/tutorial/quickstart/
