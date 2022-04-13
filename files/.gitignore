@@ -1,5 +1,4 @@
-Полезные фрагменты
-
+Текущие
 /.ssh/*
 /__pycache__/*
 /*/__pycache__/*
@@ -9,7 +8,7 @@ id_rsa
 id_rsa.pub
 
 
-
+Старые
 venv
 *.pyc
 staticfiles
